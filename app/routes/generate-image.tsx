@@ -169,7 +169,7 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black transition transform hover:scale-105
   ${enhance ? "bg-transparent border-3 border-black text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-400" : "bg-transparent border-3 border-black text-black"}`}
   disabled={isSubmitting}
             >
@@ -187,7 +187,7 @@ disabled={isSubmitting}
             <button
   type="submit"
    className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold text-transparent border-3 transition transform hover:scale-105
-  ${isSubmitting ? "bg-transparent cursor-not-allowed" : "bg-transparent"} bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300`}
+  ${enhance ? "bg-transparent border-3 border-black text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400" : "bg-transparent border-3 border-black text-black"}`}
               style={{ width: 'auto', minWidth: '120px', wordWrap: 'break-word' }}
   disabled={isSubmitting}
 >
