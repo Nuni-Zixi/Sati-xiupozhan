@@ -124,7 +124,7 @@ const GenerateImage: FC = () => {
               name="model"
               value={model}
               onChange={handleModelChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               {models.map((model) => (
                 <option key={model.id} value={model.id}>
@@ -134,7 +134,7 @@ const GenerateImage: FC = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="size" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="size" className="block text-black text-lg font-semibold mb-3">
               图片尺寸：
             </label>
             <select
@@ -150,7 +150,7 @@ const GenerateImage: FC = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="numSteps" className="block text-black text-lg font-semibold mb-3">
               生成步数：
             </label>
             <input
@@ -161,14 +161,14 @@ const GenerateImage: FC = () => {
               onChange={(e) => setNumSteps(parseInt(e.target.value, 10))}
               min="4"
               max="8"
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black transition duration-300 ease-in-out hover:bg-opacity-30"
             />
           </div>
           <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
