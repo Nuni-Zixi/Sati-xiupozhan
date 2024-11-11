@@ -59,6 +59,22 @@ export default function Index() {
               >
                 大善人のAI大模型~
               </Link>
+              </li>
+            <li>
+              <Link
+                to="https://bt.jizixi.com/"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-CornflowerBlue-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                Satiの磁力搜索~
+              </Link>
+              </li>
+            <li>
+              <Link
+                to="https://bendan.jizixi.com/"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-OrangeRed-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                Satiの笨蛋AI<span>.</span><span>.</span><span>.</span>
+              </Link>
             </li>
             {/* 可以在这里添加更多的导航项 */}
           </ul>
