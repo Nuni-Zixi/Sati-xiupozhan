@@ -173,7 +173,7 @@ const GenerateImage: FC = () => {
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
-              {enhance ? "已强化提示词" : "是否强化提示词"}
+              {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
@@ -190,7 +190,7 @@ const GenerateImage: FC = () => {
                           ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "生成中..." : "提交"}
+              {isSubmitting ? "少女祈祷中..." : "提交"}
             </button>
           </div>
         </Form>
