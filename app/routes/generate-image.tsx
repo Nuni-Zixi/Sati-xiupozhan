@@ -169,25 +169,16 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-             className={`flex-1 px-1 py-3 rounded-xl text-lg font-semibold transition transform hover:scale-105 focus:outline-none
-  ${enhance ? "bg-transparent text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-400" : "bg-transparent text-black"}`}
+             className={`flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+  ${enhance ? "bg-transparent border-3 border-black text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-400" : "bg-transparent border-3 border-black text-black"}`}
   disabled={isSubmitting}
-  onClick={() => {
-    // Add this function to handle the gradient change on click
-    enhance = true;
-  }}
-  style={{
-    background: "transparent",
-    border: "none"
-  }}
-            >
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black bg-transparent border-3 border-black transition transform hover:scale-105 focus:outline-none"
+              className="flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black bg-transparent border-3 border-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
 disabled={isSubmitting}
             >
               重置
