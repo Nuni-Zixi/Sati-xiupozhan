@@ -33,8 +33,7 @@ export default function Index() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white">
       <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10">
-        <h1 className="text-4xl font-extrabold text-black mb-8 text-center" style="background: linear-gradient(to right, #ffb6c1, #dda0dd); -webkit-background-clip: text; color: transparent;">
-  Satiの小破站</h1>
+        <h1 className="text-4xl font-extrabold text-black mb-8 text-center">Satiの小破站</h1>
         <nav>
           <ul className="space-y-4">
             <li>
