@@ -186,18 +186,9 @@ disabled={isSubmitting}
             </button>
             <button
   type="submit"
-  className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
-    ${isSubmitting ? "cursor-not-allowed" : "bg-transparent"}`}
-  style={{ 
-    borderColor: 'transparent', 
-    borderWidth: '3px', 
-    width: 'auto', 
-    minWidth: '120px', 
-    wordWrap: 'break-word',
-    background: isSubmitting ? 'linear-gradient(to right, #D8BFD8, #FFE4E1)' : 'none',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent'
-  }}
+   className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold text-black border-3 transition transform hover:scale-105
+  ${isSubmitting ? "bg-transparent cursor-not-allowed" : "bg-transparent"}`}
+              style={{ borderColor: 'black', borderWidth: '3px', width: 'auto', minWidth: '120px', wordWrap: 'break-word' }}
   disabled={isSubmitting}
 >
   {isSubmitting ? "少女祈祷中..." : "提交"}
