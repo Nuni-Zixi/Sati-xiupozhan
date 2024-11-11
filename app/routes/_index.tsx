@@ -41,7 +41,7 @@ export default function Index() {
                 to="/generate-image"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-pink-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
-                AI Image Creat
+                AI绘图 少女绘画中~
               </Link>
             </li>
             {/* 可以在这里添加更多的导航项 */}
