@@ -186,9 +186,11 @@ const GenerateImage: FC = () => {
             </button>
             <button
               type="submit"
-              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
-              disabled={isSubmitting}
+              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-black border-2 border-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
+  ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-transparent"}
+  ${isSubmitting ? "border-black" : "border-20px"}`}
+  style={{ borderWidth: '20px', width: 'auto', minWidth: '150px', wordWrap: 'break-word' }}
+disabled={isSubmitting}
             >
               {isSubmitting ? "少女祈祷中..." : "提交"}
             </button>
