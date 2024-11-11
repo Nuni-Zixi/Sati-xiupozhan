@@ -186,15 +186,17 @@ disabled={isSubmitting}
             </button>
             <button
               type="submit"
-              className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold text-black border-3 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
-  ${isSubmitting ? "bg-transparent cursor-not-allowed text-transparent" : "bg-transparent"}`}
+              className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
+  ${isSubmitting ? "cursor-not-allowed text-transparent" : "bg-transparent"}`}
   style={{ 
-    borderColor: 'white', 
+    borderColor: 'transparent', 
     borderWidth: '3px', 
     width: 'auto', 
     minWidth: '120px', 
     wordWrap: 'break-word',
-    color: isSubmitting ? 'linear-gradient(to right, #D8BFD8, #FFE4E1)' : 'black'
+    color: isSubmitting ? 'linear-gradient(to right, #D8BFD8, #FFE4E1)' : 'black',
+    backgroundClip: 'text',
+    WebkitBackgroundClip: 'text'
   }}
   disabled={isSubmitting}
 >
