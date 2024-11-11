@@ -187,7 +187,7 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black bg-transparent border-3 border-black transition transform hover:scale-105 focus:outline-none focus:ring-2"
+              className="flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black bg-transparent border-3 border-black transition transform hover:scale-105 focus:outline-none"
 disabled={isSubmitting}
             >
               重置
