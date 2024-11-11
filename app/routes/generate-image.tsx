@@ -102,7 +102,7 @@ const GenerateImage: FC = () => {
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="prompt" className="block text-black text-lg font-semibold mb-3">
-              输入提示词：
+              输入关键词句：
             </label>
             <input
               type="text"
@@ -111,7 +111,7 @@ const GenerateImage: FC = () => {
               value={prompt}
               onChange={handlePromptChange}
               className="w-full px-5 py-3 rounded-xl border border-purple-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
-              placeholder="请输入您的提示词..."
+              placeholder="请输入您的关键词句..."
               required
             />
           </div>
@@ -145,14 +145,14 @@ const GenerateImage: FC = () => {
               className="w-full px-5 py-3 rounded-xl border border-purple-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black
               transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              <option value="512x512">512x512</option>
-              <option value="768x768">768x768</option>
-              <option value="1024x1024">1024x1024</option>
+              <option value="512x512">512 x 512</option>
+              <option value="768x768">768 x 768</option>
+              <option value="1024x1024">1024 x 1024</option>
             </select>
           </div>
           <div>
             <label htmlFor="numSteps" className="block text-black text-lg font-semibold mb-3">
-              生成步数：
+              Steps：
             </label>
             <input
               type="number"
@@ -173,7 +173,7 @@ const GenerateImage: FC = () => {
   ${enhance ? "bg-transparent border-3 border-black text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-400" : "bg-transparent border-3 border-black text-black"}`}
   disabled={isSubmitting}
             >
-              {enhance ? "已强化提示词" : "强化提示词"}
+              {enhance ? "已强化关键词" : "强化关键词"}
             </button>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
@@ -192,13 +192,13 @@ disabled={isSubmitting}
   style={{ width: 'auto', minWidth: '120px', wordWrap: 'break-word' }}
   disabled={isSubmitting}
 >
-  {isSubmitting ? "少女祈祷中..." : "提交"}
+  {isSubmitting ? "少女祈祷中..." : "少女绘画❀"}
 </button>
           </div>
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
-            <h2 className="text-1xl font-bold text-black mb-4">介个是你的照片哦 请拿走吧❀</h2>
+            <h2 className="text-1xl font-bold text-pink-400 mb-4">介个是你的照片哦 请拿走吧❀</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
         )}
