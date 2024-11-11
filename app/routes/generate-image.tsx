@@ -101,7 +101,7 @@ const GenerateImage: FC = () => {
         </h1>
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="prompt" className="block text-black text-lg font-semibold mb-3">
               输入提示词：
             </label>
             <input
@@ -110,13 +110,13 @@ const GenerateImage: FC = () => {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
               placeholder="请输入您的提示词..."
               required
             />
           </div>
           <div>
-            <label htmlFor="model" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="model" className="block text-black text-lg font-semibold mb-3">
               选择模型：
             </label>
             <select
@@ -142,7 +142,8 @@ const GenerateImage: FC = () => {
               name="size"
               value={size}
               onChange={(e) => setSize(e.target.value)}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black
+              transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               <option value="512x512">512x512</option>
               <option value="768x768">768x768</option>
@@ -178,14 +179,14 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-black bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               disabled={isSubmitting}
             >
               重置
             </button>
             <button
               type="submit"
-              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
               disabled={isSubmitting}
             >
@@ -195,7 +196,7 @@ const GenerateImage: FC = () => {
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-white mb-4">生成的图片：</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">生成的图片：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
         )}
