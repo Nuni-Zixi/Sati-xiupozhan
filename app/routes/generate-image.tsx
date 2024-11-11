@@ -110,7 +110,7 @@ const GenerateImage: FC = () => {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-purple-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
               placeholder="请输入您的提示词..."
               required
             />
@@ -124,7 +124,7 @@ const GenerateImage: FC = () => {
               name="model"
               value={model}
               onChange={handleModelChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-purple-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               {models.map((model) => (
                 <option key={model.id} value={model.id}>
@@ -142,7 +142,7 @@ const GenerateImage: FC = () => {
               name="size"
               value={size}
               onChange={(e) => setSize(e.target.value)}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black
+              className="w-full px-5 py-3 rounded-xl border border-purple-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black
               transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               <option value="512x512">512x512</option>
@@ -162,7 +162,7 @@ const GenerateImage: FC = () => {
               onChange={(e) => setNumSteps(parseInt(e.target.value, 10))}
               min="4"
               max="8"
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black transition duration-300 ease-in-out hover:bg-opacity-30"
+              className="w-full px-5 py-3 rounded-xl border border-purple-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-black transition duration-300 ease-in-out hover:bg-opacity-30"
             />
           </div>
           <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
@@ -179,7 +179,7 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black bg-transparent border-3 border-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black bg-transparent border-3 border-black transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-400"
 disabled={isSubmitting}
             >
               重置
@@ -198,7 +198,7 @@ disabled={isSubmitting}
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-black mb-4">介个是你的照片哦：</h2>
+            <h2 className="text-1xl font-bold text-black mb-4">介个是你的照片哦 请拿走吧❀</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
         )}
