@@ -96,7 +96,7 @@ const GenerateImage: FC = () => {
   return (
    <div className="min-h-screen flex items-center justify-center bg-white px-4">
   <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
-    <h1 className="text-4xl font-extrabold text-black mb-8 text-center drop-shadow-lg">Satiの小破站</h1>
+    <h1 className="text-4xl font-extrabold text-black mb-8 text-center drop-shadow-lg">
           CloudFlare Wokers AI Image Creat
         </h1>
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
