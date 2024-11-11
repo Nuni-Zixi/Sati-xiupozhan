@@ -192,7 +192,7 @@ disabled={isSubmitting}
   style={{ width: 'auto', minWidth: '120px', wordWrap: 'break-word' }}
   disabled={isSubmitting}
 >
-  {isSubmitting ? "少女祈祷中<span>.</span><span>.</span><span>.</span>" : "少女绘画❀"}
+  {isSubmitting ? "少女祈祷中..." : "少女绘画❀"}
 </button>
           </div>
         </Form>
