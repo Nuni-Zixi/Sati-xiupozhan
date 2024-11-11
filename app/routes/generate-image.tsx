@@ -187,21 +187,21 @@ disabled={isSubmitting}
             <button
   type="submit"
   className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
-    ${isSubmitting ? "cursor-not-allowed text-transparent bg-gradient-to-r from-lavender to-pink-200" : "bg-transparent"}`}
+    ${isSubmitting ? "cursor-not-allowed bg-gradient-to-r from-lavender to-pink-200" : "bg-transparent"}`}
   style={{ 
     borderColor: 'transparent', 
     borderWidth: '3px', 
     width: 'auto', 
     minWidth: '120px', 
     wordWrap: 'break-word',
-    color: isSubmitting ? 'transparent' : 'black',
+    color: isSubmitting ? 'linear-gradient(to right, #D8BFD8, #FFE4E1)' : 'black',
     backgroundClip: 'text',
     WebkitBackgroundClip: 'text'
   }}
   disabled={isSubmitting}
 >
   {isSubmitting ? "少女祈祷中..." : "提交"}
-            </button>
+       </button>
           </div>
         </Form>
         {actionData && actionData.image && (
