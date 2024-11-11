@@ -186,9 +186,14 @@ disabled={isSubmitting}
             </button>
             <button
               type="submit"
-              className={`flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-black border-3 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
-  ${isSubmitting ? "bg-transparent cursor-not-allowed" : "bg-transparent"}`}
-  style={{ borderColor: 'black', borderWidth: '3px', width: 'auto', minWidth: '120px', wordWrap: 'break-word' }}
+              className={`flex-1 px-1 py-3 rounded-xl text-lg font-semibold text-transparent transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
+  ${isSubmitting ? "cursor-not-allowed" : ""}`}
+  style={{ 
+    backgroundImage: 'linear-gradient(90deg, #E1BEE7, #FFC1E3)', 
+    width: 'auto', 
+    minWidth: '120px', 
+    wordWrap: 'break-word' 
+  }} 
   disabled={isSubmitting}
 >
   {isSubmitting ? "少女祈祷中..." : "提交"}
@@ -197,7 +202,7 @@ disabled={isSubmitting}
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-black mb-4">生成的图片：</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">介个是你的照片哦：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
         )}
