@@ -198,7 +198,7 @@ disabled={isSubmitting}
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
-            <h2 className="text-1xl font-bold text-pink-400 mb-4">介个是你的照片哦 请拿走吧❀</h2>
+            <h2 className="text-1xl font-bold text-pink-400 mb-4">介个是少女为你画的欧 请取走叭❀</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
         )}
