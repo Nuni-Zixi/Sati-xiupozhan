@@ -43,6 +43,10 @@ export default function Index() {
               >
                 AI绘图 少女绘画中~
               </Link>
+              to="https://bpb.jizixi.com/panel"
+              className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-purple-300 to-pink rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                少女の魔法~
             </li>
             {/* 可以在这里添加更多的导航项 */}
           </ul>
