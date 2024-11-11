@@ -188,7 +188,7 @@ const GenerateImage: FC = () => {
               type="submit"
               className={`flex-1 px-3 py-3 rounded-xl text-lg font-semibold text-black border-3 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-black
   ${isSubmitting ? "bg-transparent cursor-not-allowed" : "bg-transparent"}`}
-  style={{ borderColor: 'black', borderWidth: '3px', width: 'auto', minWidth: '150px', wordWrap: 'break-word' }}
+  style={{ borderColor: 'black', borderWidth: '3px', width: 'auto', minWidth: '120px', wordWrap: 'break-word' }}
   disabled={isSubmitting}
 >
   {isSubmitting ? "少女祈祷中..." : "提交"}
