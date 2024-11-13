@@ -47,7 +47,7 @@ export default function Index() {
             <li>
               <Link
                 to="https://proxy.jizixi.com/https://duckduckgo.com/chat"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-Crimson-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-BlueViolet-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
                 达达鸭AI 少女の推荐~
                 </Link>
