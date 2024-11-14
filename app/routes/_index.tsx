@@ -57,7 +57,7 @@ export default function Index() {
                 to="s.jizixi.net/sati"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-purple-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
-                少女の魔法~
+                OwO 少女の魔法~
               </Link>
               </li>
             <li>
