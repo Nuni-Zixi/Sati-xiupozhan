@@ -78,7 +78,7 @@ export default function Index() {
               </li>
             <li>
               <Link
-                to="https://s.jizixi.net/ai"
+                to="https://s.jizixi.net/ty"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-yellow-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
                 Satiの通义大模型~
@@ -102,10 +102,10 @@ export default function Index() {
               </li>
             <li>
               <Link
-                to="https://bendan.jizixi.com/"
+                to="https://s.jizixi.net/bg"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-red-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
-                Satiの笨蛋AI~
+                Satiの抠图AI~
               </Link>
             </li>
             {/* 可以在这里添加更多的导航项 */}
