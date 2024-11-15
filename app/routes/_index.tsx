@@ -43,6 +43,14 @@ export default function Index() {
               >
                 AI绘图 少女绘画中~
                 </Link>
+               </li>
+            <li>
+              <Link
+                to="https://s.jizixi.net/sdl"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-green-200 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                Satiの漫画风AI绘画~
+                </Link>
               </li>
             <li>
               <Link
