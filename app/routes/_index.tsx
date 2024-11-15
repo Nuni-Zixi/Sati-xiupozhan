@@ -70,10 +70,25 @@ export default function Index() {
               </li>
             <li>
               <Link
+                to="https://s.jizixi.net/ai"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-yellow-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                Satiの通义大模型~
+              </Link>
+              </li>
+            <li>
+              <Link
                 to="https://bt.jizixi.com/"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-blue-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
                 Satiの磁力搜索~
+                </li>
+            <li>
+              <Link
+                to="https://fish.audio/zh-CN/discovery/"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-blue-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                Satiの语音合成~
               </Link>
               </li>
             <li>
