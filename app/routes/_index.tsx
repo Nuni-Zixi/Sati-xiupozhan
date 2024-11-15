@@ -47,7 +47,7 @@ export default function Index() {
             <li>
               <Link
                 to="https://s.jizixi.net/sdl"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-green-200 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-red-200 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
                 Satiの漫画风AI绘画~
                 </Link>
@@ -95,7 +95,7 @@ export default function Index() {
             <li>
               <Link
                 to="https://fish.audio/zh-CN/discovery/"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-blue-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-pink-300 to-white rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-400"
               >
                 Satiの语音合成~
               </Link>
